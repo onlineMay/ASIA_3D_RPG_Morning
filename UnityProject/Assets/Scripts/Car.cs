@@ -39,16 +39,21 @@ public class Car : MonoBehaviour
     {
         print("啦啦啦~");
 
-        Drive();    // 呼叫自訂方法
+        Drive(100);    // 呼叫自訂方法，必須給予引數
+        Drive(200);
+        Drive(300);
     }
 
     // 定義方法 (宣告方法)
     // 語法：
-    // 修飾詞 傳回類型 名稱 () { 陳述式、演算法 }
+    // 修飾詞 傳回類型 名稱 (參數) { 陳述式、演算法 }
+    // 參數語法：類型 名稱
     // void 無傳回
     // 自訂方法不會執行必須呼叫
-    public void Drive()
+
+    public void Drive(int speed)
     {
-        print("開車囉~");
+        print("開車囉，時數：" + speed);
+        print("引擎聲~");
     }
 }
