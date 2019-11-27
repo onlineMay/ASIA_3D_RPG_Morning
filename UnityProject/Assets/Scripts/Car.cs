@@ -39,9 +39,9 @@ public class Car : MonoBehaviour
     {
         print("啦啦啦~");
 
-        Drive(100, "前");            // 呼叫自訂方法，必須給予引數
+        Drive(100, "前");                  // 呼叫自訂方法，必須給予引數
         Drive(200, "後", "碰碰碰~");
-        Drive(300, "左");
+        Drive(300, "左", effect:"火花");   // 具名方式
     }
 
     // 定義方法 (宣告方法)
@@ -52,10 +52,11 @@ public class Car : MonoBehaviour
     // 自訂方法不會執行必須呼叫
     // 參數可以加預設值：選填式參數 (只能放在最右邊)
 
-    public void Drive(int speed, string direction, string sound = "噗噗噗")
+    public void Drive(int speed, string direction, string sound = "噗噗噗", string effect = "煙霧")
     {
         print("開車囉，時數：" + speed);
         print("開車方向：" + direction);
         print("引擎聲：" + sound);
+        print("特效：" + effect);
     }
 }
