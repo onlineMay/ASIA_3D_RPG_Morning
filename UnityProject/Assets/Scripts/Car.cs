@@ -42,6 +42,11 @@ public class Car : MonoBehaviour
         Drive(100, "前");                  // 呼叫自訂方法，必須給予引數
         Drive(200, "後", "碰碰碰~");
         Drive(300, "左", effect:"火花");   // 具名方式
+
+        int t = Tax();  // 使用傳回方法，他會傳回一個資料
+        print("稅金：" + t);
+
+        print("減稅：" + (Tax() - 10000));
     }
 
     // 定義方法 (宣告方法)
@@ -58,5 +63,11 @@ public class Car : MonoBehaviour
         print("開車方向：" + direction);
         print("引擎聲：" + sound);
         print("特效：" + effect);
+    }
+
+    // 傳回類型：int float string bool
+    public int Tax()
+    {
+        return cc * 1000;
     }
 }
