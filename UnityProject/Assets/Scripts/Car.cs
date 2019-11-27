@@ -38,5 +38,17 @@ public class Car : MonoBehaviour
     private void Update()
     {
         print("啦啦啦~");
+
+        Drive();    // 呼叫自訂方法
+    }
+
+    // 定義方法 (宣告方法)
+    // 語法：
+    // 修飾詞 傳回類型 名稱 () { 陳述式、演算法 }
+    // void 無傳回
+    // 自訂方法不會執行必須呼叫
+    public void Drive()
+    {
+        print("開車囉~");
     }
 }
