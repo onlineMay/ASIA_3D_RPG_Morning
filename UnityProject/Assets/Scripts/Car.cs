@@ -42,6 +42,7 @@ public class Car : MonoBehaviour
         Drive(100, "前");                  // 呼叫自訂方法，必須給予引數
         Drive(200, "後", "碰碰碰~");
         Drive(300, "左", effect:"火花");   // 具名方式
+        Drive(10, "前方");
 
         int t = Tax();  // 使用傳回方法，他會傳回一個資料
         print("稅金：" + t);
@@ -57,6 +58,13 @@ public class Car : MonoBehaviour
     // 自訂方法不會執行必須呼叫
     // 參數可以加預設值：選填式參數 (只能放在最右邊)
 
+    /// <summary>
+    /// 開車方法
+    /// </summary>
+    /// <param name="speed">速度</param>
+    /// <param name="direction">方向</param>
+    /// <param name="sound">引擎音效</param>
+    /// <param name="effect">特效</param>
     public void Drive(int speed, string direction, string sound = "噗噗噗", string effect = "煙霧")
     {
         print("開車囉，時數：" + speed);
@@ -66,6 +74,10 @@ public class Car : MonoBehaviour
     }
 
     // 傳回類型：int float string bool
+    /// <summary>
+    /// 運算稅金方法
+    /// </summary>
+    /// <returns>傳回稅金運算結果</returns>
     public int Tax()
     {
         return cc * 1000;
