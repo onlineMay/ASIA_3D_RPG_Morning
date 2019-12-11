@@ -18,4 +18,12 @@ public class LearnAPI : MonoBehaviour
 
         test2.localScale = Vector3.one * 5;
     }
+
+    private void Update()
+    {
+        // 使用非靜態方法
+        // 代號.方法(對應引數)
+        test1.Rotate(0, 3, 0);
+        test2.Translate(0, 0, 0.5f);
+    }
 }
