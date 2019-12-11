@@ -21,6 +21,8 @@ public class LearnAPIStatic : MonoBehaviour
         print(r);
 
         // 使用 API 輸出 PI
+        print(Mathf.PI);
         // 使用 API 把 -10 去負數
+        print(Mathf.Abs(-10));
     }
 }

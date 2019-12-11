@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Run()
     {
-
+        
     }
 
     /// <summary>
