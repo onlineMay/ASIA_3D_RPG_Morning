@@ -667,6 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test1: {fileID: 1799508716004728223}
   test2: {fileID: 1626811551}
+  lig1: {fileID: 0}
 --- !u!1001 &76946228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7244,7 +7245,7 @@ PrefabInstance:
     - target: {fileID: 5923416178797629510, guid: c75d3829f6d596e40b1ae0af3db9194d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.233
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5923416178797629510, guid: c75d3829f6d596e40b1ae0af3db9194d,
         type: 3}
