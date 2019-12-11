@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Run()
     {
-        
+        print("水平 " + Input.GetAxis("Horizontal")); // Horizontal A 左 -1、D 右 1、沒按 0
+        print("垂直 " + Input.GetAxis("Vertical"));   // Vertical   S 下 -1、W 上 1、沒按 0
     }
 
     /// <summary>
@@ -32,7 +33,10 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Jump()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("跳躍動畫");
+        }
     }
 
     /// <summary>
@@ -40,7 +44,10 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Attack()
     {
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            print("攻擊動畫");
+        }
     }
 
     /// <summary>
@@ -76,4 +83,11 @@ public class Player : MonoBehaviour
 
     }
     #endregion
+
+    private void Update()
+    {
+        Jump();
+        Attack();
+        Run();
+    }
 }
