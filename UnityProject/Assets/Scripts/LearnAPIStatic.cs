@@ -4,7 +4,7 @@ public class LearnAPIStatic : MonoBehaviour
 {
     private void Start()
     {
-        // 使用靜態成員
+        // 使用靜態成員 static
         // 成員：屬性 properties (類似欄位 fields)
         // 成員：方法 methods
 
@@ -12,5 +12,15 @@ public class LearnAPIStatic : MonoBehaviour
         // 設定靜態屬性語法：類別.屬性 = 值
 
         print(Random.value);
+
+        // 使用靜態方法語法：類別.方法(對應引數)
+
+        print(Random.Range(1, 11));
+
+        int r = Random.Range(100, 201);
+        print(r);
+
+        // 使用 API 輸出 PI
+        // 使用 API 把 -10 去負數
     }
 }
