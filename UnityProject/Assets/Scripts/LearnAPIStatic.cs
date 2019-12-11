@@ -25,4 +25,14 @@ public class LearnAPIStatic : MonoBehaviour
         // 使用 API 把 -10 去負數
         print(Mathf.Abs(-10));
     }
+
+    // 輸入 使用 更新事件 Update
+    private void Update()
+    {
+        //print(Input.mousePosition);
+        //print(Input.anyKeyDown);
+
+        //print(Input.GetKeyDown("mouse 0"));
+        print(Input.GetKeyDown(KeyCode.Mouse1));
+    }
 }
