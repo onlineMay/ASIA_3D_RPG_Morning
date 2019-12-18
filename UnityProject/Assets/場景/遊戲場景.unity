@@ -660,14 +660,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69828480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 796f084f761cf334db144ed9fbdeab87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   test1: {fileID: 1799508716004728223}
   test2: {fileID: 1626811551}
-  lig1: {fileID: 0}
 --- !u!1001 &76946228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -827,7 +826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 148850, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 3}
       propertyPath: m_Name
-      value: vThirdPersonCamera
+      value: "\u73A9\u5BB6"
       objectReference: {fileID: 0}
     - target: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5015,7 +5014,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 155668, guid: 1f8dfc02bc7e3e444bd8ff7f039199b6, type: 3}
       propertyPath: m_Name
-      value: vThirdPersonController
+      value: "\u651D\u5F71\u6A5F"
       objectReference: {fileID: 0}
     - target: {fileID: 414352, guid: 1f8dfc02bc7e3e444bd8ff7f039199b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5330,6 +5329,7 @@ MonoBehaviour:
   countCurrent: 0
   isDead: 0
   hp: 100
+  ani: {fileID: 1557041893}
 --- !u!95 &1557041893
 Animator:
   serializedVersion: 3

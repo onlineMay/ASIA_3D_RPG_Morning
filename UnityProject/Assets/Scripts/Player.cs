@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public float hp = 100;
     #endregion
 
+    public Animator ani;
+
     #region 方法區域
     /// <summary>
     /// 跑步
@@ -36,6 +38,11 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             print("跳躍動畫");
+            ani.SetBool("跳躍開關", true);
+        }
+        else
+        {
+            ani.SetBool("跳躍開關", false);
         }
     }
 
@@ -47,6 +54,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             print("攻擊動畫");
+            ani.SetTrigger("攻擊觸發");
         }
     }
 
