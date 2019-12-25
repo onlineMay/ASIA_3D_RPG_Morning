@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 55447826}
   - component: {fileID: 55447825}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u540D\u7A31"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3712,6 +3712,7 @@ GameObject:
   - component: {fileID: 999782872}
   - component: {fileID: 999782874}
   - component: {fileID: 999782873}
+  - component: {fileID: 999782875}
   m_Layer: 5
   m_Name: talk
   m_TagString: Untagged
@@ -3776,6 +3777,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999782871}
   m_CullTransparentMesh: 0
+--- !u!114 &999782875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999782871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3a6fd8e6b18143bc241066d5f2bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textName: {fileID: 55447825}
+  textContent: {fileID: 1713898462}
 --- !u!1001 &1019595950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4619,8 +4634,9 @@ GameObject:
   - component: {fileID: 1248852278}
   - component: {fileID: 1248852277}
   - component: {fileID: 1248852276}
+  - component: {fileID: 1248852280}
   m_Layer: 5
-  m_Name: TALK
+  m_Name: "\u5C0D\u8A71\u6846"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4706,6 +4722,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &1248852280
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248852275}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1255183520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6237,7 +6265,7 @@ GameObject:
   - component: {fileID: 1713898463}
   - component: {fileID: 1713898462}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u5167\u5BB9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

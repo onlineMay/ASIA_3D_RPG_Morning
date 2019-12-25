@@ -1,18 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class dailogsystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [Header("介面")]
+    public Text textName;
+    public Text textContent;
+    public CanvasGroup uiGroup;
+
+    public void ShowDialog(string gerName,string getContent)
     {
-        
+        uiGroup.alpha = 1;
+        textName.text = gerName;
+        textContent.text = getContent;
     }
 }
